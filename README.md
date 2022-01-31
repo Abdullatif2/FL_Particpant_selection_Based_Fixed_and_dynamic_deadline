@@ -18,3 +18,10 @@ The FEMNIST datasets can be downloaded directly from leaf using the following li
 
 https://leaf.cmu.edu/
 
+For CIFAR10, you can directly download it from the following link:
+
+https://www.tensorflow.org/datasets/catalog/cifar10 
+
+
+
+
