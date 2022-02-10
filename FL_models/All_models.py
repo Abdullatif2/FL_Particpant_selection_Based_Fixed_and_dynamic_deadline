@@ -4,7 +4,7 @@ import tensorflow as tf
 from tqdm import trange
 
 
-class Model(object):
+class Model_femnist(object):
     '''
     Assumes that images are 28px by 28px
     '''
