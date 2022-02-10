@@ -12,7 +12,7 @@ import matplotlib
 matplotlib.use('Agg')
 
 # GLOBAL PARAMETERS
-OPTIMIZERS = ['fedavg', 'fedprox', 'fedsgd', 'fedfedl']
+OPTIMIZERS = ['fedavg', 'fedprox']
 
 DATASETS = ['nist', 'mnist', 'fashion_mnist']  # NIST is EMNIST in the paper
 
@@ -167,7 +167,7 @@ if __name__ == '__main__':
     local_ep = [20, 20]
     batch_size = [20,20]
     DATA_SET = "femnist"
-    number_users = 20
+    number_users = 20  # This just for random 
     for i in range(len(algorithms_list)):
         main(num_users=number_users, loc_ep=local_ep[i], Numb_Glob_Iters = 600, lamb=lamb_value[i],
              learning_rate=learning_rate[i],hyper_learning_rate=hyper_learning_rate[i],  alg=algorithms_list[i], batch_size=batch_size[i], dataset=DATA_SET)
