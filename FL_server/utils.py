@@ -9,7 +9,7 @@ models_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 models_dir = os.path.join(models_dir, 'models')
 sys.path.append(models_dir)
 
-from client import Client
+from user_base import Client
 
 def batch_data(data, batch_size):
     '''
