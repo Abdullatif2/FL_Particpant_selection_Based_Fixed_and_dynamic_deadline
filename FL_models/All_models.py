@@ -6,7 +6,7 @@ from tqdm import trange
 
 class Model_femnist(object):
     '''
-    Assumes that images are 28px by 28px
+    images are 28px by 28px with 62 classes
     '''
 
     def __init__(self, num_classes, optimizer, seed=1):
@@ -160,7 +160,7 @@ class Model_femnist(object):
 
 class Model_mnist(object):
     '''
-    Assumes that images are 28px by 28px
+    images are 28px by 28px and classes only 10
     '''
 
     def __init__(self, num_classes, optimizer, seed=1):
