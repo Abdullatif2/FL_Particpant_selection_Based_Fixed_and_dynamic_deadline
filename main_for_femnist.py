@@ -14,7 +14,7 @@ matplotlib.use('Agg')
 # GLOBAL PARAMETERS
 OPTIMIZERS = ['fedavg', 'fedprox']
 
-DATASETS = ['nist', 'mnist', 'fashion_mnist']  # NIST is EMNIST in the paper
+DATASETS = ['femnist', 'mnist']  #
 
 MODEL_PARAMS = {
     'sent140.bag_dnn': (2,),  # num_classes
@@ -22,14 +22,8 @@ MODEL_PARAMS = {
     # seq_len, num_classes, num_hidden
     'sent140.stacked_lstm_no_embeddings': (25, 2, 100),
     # num_classes, should be changed to 62 when using EMNIST
-    'nist.mclr': (62,),
-    'nist.cnn': (62,),
+    'femnist.cnn': (62,),
     'mnist.mclr': (10,),  # num_classes
-    'mnist.cnn': (10,),  # num_classes
-    'fashion_mnist.mclr': (10,),
-    'fashion_mnist.cnn': (10,),
-    'shakespeare.stacked_lstm': (80, 80, 256),  # seq_len, emb_dim, num_hidden
-    'synthetic.mclr': (10, )  # num_classes
 }
 
 
